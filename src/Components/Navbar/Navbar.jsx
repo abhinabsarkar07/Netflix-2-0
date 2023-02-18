@@ -1,9 +1,11 @@
 import React from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import "../Navbar/Navbar.css" ;         // importing Navbar.css file 
 
 function Navbar() {
+
+  const navigate = useNavigate();
 
   const[show, handleShow] = useState(false);
 
@@ -25,9 +27,13 @@ function Navbar() {
   return (
     <div className= {`Navbar ${show && "nav_Black"}`}>
         <div className="nav_contents">
-            <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Netflix" className="nav_Logo" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Avatar" className="nav_Avatar" />
-        </div>
+            <img 
+              onClick={() => navigate("/")}
+              src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Netflix" className="nav_Logo" />
+            <img
+              onClick={() => navigate("/profile")}
+              src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Avatar" className="nav_Avatar" />
+        </div> 
     </div>
   )
 }

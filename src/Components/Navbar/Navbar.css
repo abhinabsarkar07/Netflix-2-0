@@ -22,9 +22,9 @@
 
 .nav_Logo{
     position: fixed;
-    top: 0px;
+    top: 18px;
     left: 25px;
-    width: 221px;
+    width: 117px;
     object-fit: contain;
     padding-left: 20px;
     cursor: pointer;
