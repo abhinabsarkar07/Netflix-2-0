@@ -17,7 +17,10 @@ function Banner() {
             Math.floor(Math.random() * request.data.results.length - 1)
           ]
         );
+        return request;
     }
+
+    fetchData();
   }, [])
 
   console.log(root);
@@ -33,8 +36,8 @@ function Banner() {
     className='banner' 
     style={{
     backgroundSize: "cover",
-    backgroundImage: `url("https://image.tmdb.org/t/p/${root?.backdrop_path}")`,
-    backgroundPosition: "center center"
+    backgroundImage: `url("https://image.tmdb.org/t/p/original/${root?.backdrop_path}")`,
+    backgroundPosition: "center center",
 
   }}
   >
