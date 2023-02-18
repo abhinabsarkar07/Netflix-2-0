@@ -28,12 +28,6 @@ function Navbar() {
             <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Netflix" className="nav_Logo" />
             <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Avatar" className="nav_Avatar" />
         </div>
-    
-    
-    
-    
-    
-    
     </div>
   )
 }
